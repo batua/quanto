@@ -8,4 +8,3 @@ Created on Sun Mar 11 19:27:29 2018
 import os 
 
 WORK_DIR = os.environ['WORK_DIR']
-REPO_NAME = 'quanto'
