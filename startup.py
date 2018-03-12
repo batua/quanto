@@ -11,7 +11,7 @@ import sys
 
 _path = os.path.dirname(__file__).replace('\\', '/')
 
-WORK_DIR = _path[:_path.rfind('/')+1]
+WORK_DIR = _path[:_path.rfind('/') + 1]
 os.environ['WORK_DIR'] = WORK_DIR
 
 if WORK_DIR not in sys.path:
