@@ -17,6 +17,10 @@ jobs:
 
     working_directory: ~/repo
 
+    dependencies:
+      override:
+        - pip install -r requirements.txt
+
     steps:
       - checkout
       # run tests!
