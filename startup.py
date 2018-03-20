@@ -12,11 +12,11 @@ import sys
 _path = os.path.dirname(__file__).replace('\\', '/')
 
 WORK_DIR = _path[:_path.rfind('/') + 1]
-os.environ['WORK_DIR'] = WORK_DIR
+os.environ['WORK_DIR'] = WORK_DIR + '/QuantoPy/'
 
 if WORK_DIR not in sys.path:
     sys.path.append(WORK_DIR)
-    
+
     if 'PYTHONPATH' in os.environ:
         os.environ['PYTHONPATH'] = WORK_DIR + ':' + os.environ['PYTHONPATH']
     else:
