@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 
 
-from QuantoPy3.analytics.financials import utils
+from analytics.financials import utils
 
 
 def test_log_nday_return():
