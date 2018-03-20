@@ -6,3 +6,10 @@ jobs:
      steps:
        - checkout
        - run: echo "hello world"
+   test:
+      override:
+         - py.test ./tests
+   
+   dependencies:
+      pre:
+         -  pip install pytest
