@@ -8,13 +8,13 @@ Created on Mon Mar 12 23:31:38 2018
 import numpy as np
 
 
-def nday_return(df, nday=1, log=False):
+def nday_return(y, nday=1, log=False):
     """
     Returns a simple or log return
     """
-    gross_rtn = df/df.shift(periods=nday)
+
     if log:
-        r = np.log(gross_rtn)
+        r = np.log(y).diff(nday)
     else:
-        r = gross_rtn - 1
+        r = y.diff(nday)/y
     return r

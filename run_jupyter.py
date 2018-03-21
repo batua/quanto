@@ -9,5 +9,5 @@ import os
 import startup
 
 wdir = os.environ['WORK_DIR']
-os.chdir(wdir + '/QuantoPy3/notebooks/')
+os.chdir(wdir + '/notebooks/')
 os.system('jupyter notebook')
