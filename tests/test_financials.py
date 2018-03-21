@@ -14,6 +14,8 @@ from analytics.financials import utils
 
 def test_log_nday_return():
     df = pd.DataFrame([112.5, 110.5, 110.9, 113.9], columns=['price'])
+
+
     expected_log_rtn_1 = np.array([np.nan, -0.017937700686667318,
                                    0.0036133733985138313, 0.026691976096815107])
     expected_log_rtn_3 = np.array([np.nan, np.nan,
